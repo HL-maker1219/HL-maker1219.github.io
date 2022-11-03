@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+ <head>
+     <title>Formative Assignment</title>
+        <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <header>
+            <img class="MenuIcon" src="images/menuIcon.png" alt="MenuIcon">
+            <nav>
+              <ul class="navLinks">
+                <li><a href="#">It</a></li>
+                <li><a href="#">Has</a></li>
+                <li><a href="#">No</a></li>
+                <li><a href="#">Function</a></li>
+              </ul>
+            </nav>
+     </header>
+ <nav class = "pageContain">
+        <h1>Programming Gold Formative Assignment One</h1>
+        <!--Part below is learned form video "User Input and Response on a webpage using JavaScript (for beginners)" by Keith Paterson-->
+        <!--with improvement based on individual understanding-->
+        <nav class = "nameBar">
+         <input id="userInput" placeholder="Input your name here, it is functional">
+         <button onclick="submitName()"> Submit </button>
+            <script>
+                function submitName(){
+                    let userInput = document.querySelector("#userInput");
+                    let message = document.querySelector("#message");
+                    message.innerHTML = "Welcome to the index page, " + userInput.value;
+                }
+            </script>
+        </nav>
+        <h3 id="message"> </h3>
+        <!--ends in here-->
+        <p>This website is made for Programming Gold Fommative Assignment 1 by Keyin Lin, Heather. The subject is Art and Painting.Most of the paragraph is not originated by me. 
+        <br>Basically is all about Vincent Van Gogh, the reason is I am lazy.Don't try to clip the buttons above, it does not linked to any webpage, but it is interesting to place the mouse and see it changes color</p>
+        <!--Part below learned from "How To Make A Search Bar Using HTML And CSS In 10 Just Minutes" by Easy Tutorials-->
+        <div class="searchBarContainer">
+            <form action="https://www.google.com/search" method="get" class="searchBar">
+                <input type = "text" placeholder="Perhaps you want to search something in here?" name="q">
+                <button type="submit"><img class="searchIcon"src="images/searchButton.png"></button>
+            </form>
+        </div>
+        <!--ends in here-->
+        <br>
+        <h2>The Biographics of Van Gogh</h2>
+        <!--This part is learned from "HTML & CSS - How to Embed a YouTube Video in Your Website" by codefoxx-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wI2i5ca1RT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--ends in here-->
+        <br>
+        <br>
+        <br>
+        <!--Part below learned from "How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step" by Easy Tutorials-->
+        <!--with improvemrent based on indiviual understanding-->
+        <nav class="aspectsContain">
+            <h1>Famous painting of Van Gogh</h1>
+            <p>All the images and paragraph are from Britannica</p>
+            <div class="row">
+                <div class="aspectsColumn">
+                 <img src="images/StarryNight.webp" alt="StarryNightByVanGogh">
+                 <br>
+                 <div class="layer">
+                     <h3>Starry Night</h3>
+                     <br>
+                     <p>created in 1889</p>
+                 </div>
+                </div>
+                <div class="aspectsColumn">
+                 <img src="images/ThePotatoEaters.webp" alt="ThePotatoEatersByVanGogh">
+                    <div class="layer">
+                     <h3>The Potato Eaters</h3>
+                     <br>
+                     <p>created in 1885</p>
+                    </div>
+                </div>
+                <div class="aspectsColumn">
+                 <img src="images/OldTower.webp" alt="OldTowerByVanGogh">
+                 <div class="layer">
+                     <h3>Old Tower</h3>
+                     <br>
+                     <p>created in 1884</p>
+                 </div>
+                </div>
+            </div>
+        </nav>
+        <div class="description">
+            <div class="desCol">
+             <h3>Summary</h3>
+             <p>Vincent van Gogh, in full Vincent Willem van Gogh, (born March 30, 1853, Zundert, Netherlands—died July 29, 1890, Auvers-sur-Oise, near Paris, France), Dutch painter, generally considered the greatest after Rembrandt van Rijn, and one of the greatest of the Post-Impressionists. The striking colour, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art. Van Gogh’s art became astoundingly popular after his death, especially in the late 20th century, when his work sold for record-breaking sums at auctions around the world and was featured in blockbuster touring exhibitions. In part because of his extensive published letters, van Gogh has also been mythologized in the popular imagination as the quintessential tortured artist.</p>
+            </div>
+            <div class="desCol">
+             <h3>The productive decade of Vincent van Gogh</h3>
+             <p>His artistic career was extremely short, lasting only the 10 years from 1880 to 1890. During the first four years of this period, while acquiring technical proficiency, he confined himself almost entirely to drawings and watercolours. First, he went to study drawing at the Brussels Academy; in 1881 he moved to his father’s parsonage at Etten, Netherlands, and began to work from nature.</p>
+            </div>
+            <div class="desCol">
+             <h3>Legacy of Vincent van Gogh</h3>
+             <p>Largely on the basis of the works of the last three years of his life, van Gogh is generally considered one of the greatest Dutch painters of all time. His work exerted a powerful influence on the development of much modern painting, in particular on the works of the Fauve painters, Chaim Soutine, and the German Expressionists. Yet of the more than 800 oil paintings and 700 drawings that constitute his life’s work, he sold only one in his lifetime. Always desperately poor, he was sustained by his faith in the urgency of what he had to communicate and by the generosity of Theo, who believed in him implicitly. The letters that he wrote to Theo from 1872 onward, and to other friends, give such a vivid account of his aims and beliefs, his hopes and disappointments, and his fluctuating physical and mental state that they form a unique and touching biographical record that is also a great human document.</p>
+            </div>
+        </div>
+        <!--ends in here-->
+ </nav>
+ </body>
+ <footer>
+    <h3>Reference List</h3>
+    <br>
+    <p>Biographics (2020). Vincent Van Gogh: The Humble Genius. YouTube. Available at: https://www.youtube.com/watch?v=wI2i5ca1RT4.</p>
+    <br>
+    <p>codefoxx (2021). HTML & CSS - How to Embed a YouTube Video in Your Website. [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=ly36kn0ug4k [Accessed 2 Nov. 2022].</p>
+    <br>
+    <p>Easy Tutorials (2021). How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step. YouTube. Available at: https://www.youtube.com/watch?v=oYRda7UtuhA [Accessed 16 Oct. 2022].</p>
+    <br>
+    <p>Nepal, C. (2019). Responsive Navigation Menu Bar using HTML & CSS. [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=oLgtucwjVII [Accessed 16 Oct. 2022].</p>
+    <br>
+    <p>Paterson, K. (2021). User Input and Response on a webpage using JavaScript (for beginners). [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=KB6Yg5hNrqc&t=908s [Accessed 18 Oct. 2022].</p>
+    <br>
+    <p>Skillthrive (2019). Navbar CSS Tutorial: 3 Ways to Create a Navigation Bar with Flexbox. YouTube. Available at: https://www.youtube.com/watch?v=PwWHL3RyQgk&t=625s [Accessed 16 Oct. 2022].</p>
+    <br>
+    <p>The Editors of Encyclopaedia Britannica (2019a). Vincent van Gogh - Legacy. In: Encyclopædia Britannica. [online] Available at: https://www.britannica.com/biography/Vincent-van-Gogh/Legacy.</p>
+    <br>
+    <p>The Editors of Encyclopaedia Britannica (2019b). Vincent van Gogh - The productive decade. In: Encyclopædia Britannica. [online] Available at: https://www.britannica.com/biography/Vincent-van-Gogh/The-productive-decade.</p>
+    <br>
+    <p>The Editors of Encyclopedia Britannica (2019). Vincent Van Gogh | Biography, Art, & Facts. In: Encyclopædia Britannica. [online] Available at: https://www.britannica.com/biography/Vincent-van-Gogh [Accessed 2 Nov. 2022].</p>
+</footer>

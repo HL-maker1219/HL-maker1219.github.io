@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li, a, button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+    background-color: #263238;
+}
+
+header{
+    background-color: #263238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.MenuIcon{
+    width: 3%;
+    height: 3%;
+    cursor: pointer;
+    background-color: #263238;
+}
+.navLinks{
+    list-style: none;
+    background-color: #263238;
+}
+.navLinks li{
+    display:  inline-block;
+    padding: 0px 20px;
+    background-color: #263238;
+}
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover{
+    color: aqua;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    transform: translateX(15%);
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.pageContain{
+    width: 90%;
+    margin: 20px;
+    text-align: center;
+    padding-left: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+p{
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+    font-weight: 100;
+}
+
+.description{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.desCol{
+  flex-basis: 30%;
+  background:#90A4AE;
+  margin-bottom: 25%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 300;
+    margin: 10px 0;
+}
+.desCol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}                              
+
+@media(max-width: 300px){
+    .row{
+        flex-direction: column;
+    }
+}
+.aspectsContain{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.aspectsColumn{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.aspectsColumn img{
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(48, 47, 47, 0.3)
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color:#263238;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-30%);
+    position: absolute;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 80%;
+    opacity: 1;
+}
+
+.searchBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchIcon{
+    width: 300%;
+    height: 70%;
+    display: flex;
+    transform: translateX(-25%);
+}
+
+.searchBar{
+    width: 100%;
+    max-width: 700px;
+    background: #B0BEC5;
+    height: 100%;
+    max-height: 70px;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.nameBar{
+    width: 100%;
+    max-width: 500px;
+    background: #B0BEC5;
+    height: 100%;
+    max-height: 50px;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.nameBar input{
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+
+
+.responseBar{
+    width: 100%;
+    max-width: 500px;
+    background:#B0BEC5;
+    height: 100%;
+    max-height: 40px;
+    display: flex;
+}
+
+.searchBar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #263238;
+}
+
+::placeholder{
+    color:#757575;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.searchBar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #263238;
+    cursor: pointer;
+    transform: translateX(25%);
+}
+
+footer{
+    background-color: #263238;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    color: aliceblue;
+}
+
